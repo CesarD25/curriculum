@@ -5,18 +5,42 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="style.css">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: 1em auto;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #f3f3f3;
+            font-weight: bold;
+        }
+
+        /* Sin bordes */
+        table, th, td {
+            border: none;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <img src="https://picsum.photos/150" alt="Foto de perfil de Cesar Dominguez" style="border-radius: 50%; width: 150px; height: 150px;">
         <h1>Cesar Marcelo Dominguez Gomez</h1>
         <p>Estudiante</p>
     </header>
     <nav>
-        <ul>
+        <ol>
             <li><a href="#resumen">Resumen</a></li>
             <li><a href="#educacion">Educación</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
-        </ul>
+            <li><a href="#testimonios">Testimonios</a></li>
+        </ol>
     </nav>
 
     <main>
@@ -28,10 +52,123 @@
             <h2>Educación</h2>
             <p>Espol: Ingenieria en Computacion 2021-Actualidad</p>
         </section>
+        <section id="ubicacion">
+            <h2>Ubicación</h2>
+            <p>Guayaquil, Ecuador</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.401735573245!2d-79.8974543!3d-2.1465998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d34d2fbd77f%3A0x2d9efc93f915c9b5!2sESPOL!5e0!3m2!1ses!2sec!4v1700000000000!5m2!1ses!2sec"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </section>
         <section id="habilidades">
             <h2>Habilidades</h2>
-            <p>Conocimientos en lenguajes de programacion como python, java, C</p>
+            <table align="center">
+                <tr>
+                    <th>Lenguaje</th>
+                    <th>Nivel</th>
+                    <th>Experiencia</th>
+                </tr>
+                <tr>
+                    <th>Python</th>
+                    <td>Avanzado</td>
+                    <td>Desarrollo de scripts y análisis de datos</td>
+                </tr>
+                <tr>
+                    <th>Java</th>
+                    <td>Intermedio</td>
+                    <td>Aplicaciones orientadas a objetos y proyectos académicos</td>
+                </tr>
+                <tr>
+                    <th>C</th>
+                    <td>Intermedio</td>
+                    <td>Programas de bajo nivel y estructuras de datos</td>
+                </tr>
+            </table>
         </section>
+        <section id="testimonios">
+            <h2>Testimonios</h2>
+
+            <article>
+                <blockquote>
+                    “Cesar demostró gran compromiso y atención al detalle durante el desarrollo del proyecto web corporativo.”
+                </blockquote>
+                <p><strong>María López</strong> — Gerente de Tecnología en <em>TechSolutions</em></p>
+                <p>Trabajé con Cesar en el rediseño del sitio web institucional. Su enfoque analítico y capacidad para resolver problemas fueron clave para cumplir con los plazos del proyecto.</p>
+            </article>
+
+            <article>
+                <blockquote>
+                    “Su habilidad para adaptarse rápidamente a nuevas herramientas fue impresionante.”
+                </blockquote>
+                <p><strong>Javier Ortega</strong> — Líder de Proyecto en <em>Innovasoft</em></p>
+                <p>Durante su pasantía, Cesar aportó ideas innovadoras y colaboró activamente en la optimización de procesos internos mediante scripts automatizados.</p>
+            </article>
+
+            <article>
+                <blockquote>
+                    “Destaco su profesionalismo y entusiasmo por aprender constantemente.”
+                </blockquote>
+                <p><strong>Laura Sánchez</strong> — Supervisora de Desarrollo en <em>DataVision</em></p>
+                <p>Cesar participó en un proyecto de análisis de datos, donde demostró iniciativa, pensamiento crítico y una excelente actitud para trabajar en equipo.</p>
+            </article>
+        </section>
+        <section id="presentacion">
+            <h2>Presentación en Video</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Video de presentación de Cesar Dominguez" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <!-- Campo de texto en una línea -->
+                <div>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <!-- Lista desplegable -->
+                <div>
+                    <label for="motivo">Motivo de contacto:</label>
+                    <select id="motivo" name="motivo">
+                        <option value="empleo">Oportunidad laboral</option>
+                        <option value="colaboracion">Colaboración en proyectos</option>
+                        <option value="consulta">Consulta general</option>
+                    </select>
+                </div>
+
+                <!-- Opciones de selección única (radio buttons) -->
+                <fieldset>
+                    <legend>Disponibilidad para trabajar:</legend>
+                    <label><input type="radio" name="disponibilidad" value="tiempo-completo" checked> Tiempo completo</label>
+                    <label><input type="radio" name="disponibilidad" value="medio-tiempo"> Medio tiempo</label>
+                    <label><input type="radio" name="disponibilidad" value="remoto"> Remoto</label>
+                </fieldset>
+
+                <!-- Selección múltiple (checkboxes) -->
+                <fieldset>
+                    <legend>Áreas de interés:</legend>
+                    <label><input type="checkbox" name="interes" value="desarrollo"> Desarrollo de software</label>
+                    <label><input type="checkbox" name="interes" value="datos"> Ciencia de datos</label>
+                    <label><input type="checkbox" name="interes" value="seguridad"> Seguridad informática</label>
+                </fieldset>
+
+                <!-- Área de texto -->
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="50"
+                        placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+
+                <!-- Botón de envío -->
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+
     </main>
 
     <footer>
