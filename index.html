@@ -4,56 +4,37 @@
     <title>Curriculum</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 60%;
-            margin: 1em auto;
-        }
-
-        th, td {
-            text-align: left;
-            padding: 10px;
-        }
-
-        th {
-            background-color: #f3f3f3;
-            font-weight: bold;
-        }
-
-        /* Sin bordes */
-        table, th, td {
-            border: none;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
     <header>
-        <img src="https://picsum.photos/150" alt="Foto de perfil de Cesar Dominguez" style="border-radius: 50%; width: 150px; height: 150px;">
+        <img id="photo" src="https://picsum.photos/150" alt="Foto de perfil de Cesar Dominguez">
         <h1>Cesar Marcelo Dominguez Gomez</h1>
         <p>Estudiante</p>
     </header>
     <nav>
-        <ol>
+        <ul>
             <li><a href="#resumen">Resumen</a></li>
             <li><a href="#educacion">Educación</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#testimonios">Testimonios</a></li>
-        </ol>
+        </ul>
     </nav>
 
     <main>
         <section id="resumen">
-            <h2>Resumen</h2>
+            <h2 class="subtitle">Resumen</h2>
             <p>Soy estudiante de Ciencias de la Computacion en Espol.</p>
         </section>
         <section id="educacion">
-            <h2>Educación</h2>
+            <h2 class="subtitle">Educación</h2>
             <p>Espol: Ingenieria en Computacion 2021-Actualidad</p>
         </section>
         <section id="ubicacion">
-            <h2>Ubicación</h2>
+            <h2 class="subtitle">Ubicación</h2>
             <p>Guayaquil, Ecuador</p>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.401735573245!2d-79.8974543!3d-2.1465998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d34d2fbd77f%3A0x2d9efc93f915c9b5!2sESPOL!5e0!3m2!1ses!2sec!4v1700000000000!5m2!1ses!2sec"
@@ -61,7 +42,7 @@
             </iframe>
         </section>
         <section id="habilidades">
-            <h2>Habilidades</h2>
+            <h2 class="subtitle">Habilidades</h2>
             <table align="center">
                 <tr>
                     <th>Lenguaje</th>
@@ -86,7 +67,7 @@
             </table>
         </section>
         <section id="testimonios">
-            <h2>Testimonios</h2>
+            <h2 class="subtitle">Testimonios</h2>
 
             <article>
                 <blockquote>
@@ -113,7 +94,7 @@
             </article>
         </section>
         <section id="presentacion">
-            <h2>Presentación en Video</h2>
+            <h2 class="subtitle">Presentación en Video</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
                 title="Video de presentación de Cesar Dominguez" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -121,7 +102,7 @@
             </iframe>
         </section>
         <section id="contacto">
-            <h2>Contacto</h2>
+            <h2 class="subtitle">Contacto</h2>
             <form action="#" method="post">
                 <!-- Campo de texto en una línea -->
                 <div>
@@ -173,10 +154,10 @@
 
     <footer>
         <p>© Cesar Marcelo Dominguez Gomez - 2025</p>
-        <ul>
+        <ol>
             <li><a href="https://www.linkedin.com/in/cesar-dominguez-gomez-596b292a3/">LinkedIn</a></li>
             <li><a href="https://github.com/CesarD25">GitHub</a></li>
-        </ul>
+        </ol>
     </footer>
 </body>
 </html>
